@@ -11,5 +11,8 @@ function getComputerChoice(arr) {
 
 const options = ['rock', 'paper', 'scissors'];
 
-const result = getComputerChoice(options);
-console.log(result);
+const computerSelection = getComputerChoice(options);
+console.log(computerSelection);
+
+let playerSelection = prompt("Rock, paper or scissors?");
+console.log(playerSelection);
