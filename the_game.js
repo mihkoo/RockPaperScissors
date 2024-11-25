@@ -34,58 +34,58 @@ function playRound(humanSelection, computerSelection) {
 
 //console.log(playRound(humanSelection, computerSelection));
 
-function playGame() {
+// function playGame() {
 
-    let i;
-    let humanScore = 0;
-    let computerScore = 0;
-    const options = ['rock', 'paper', 'scissors'];
+//     let i;
+//     let humanScore = 0;
+//     let computerScore = 0;
+//     const options = ['rock', 'paper', 'scissors'];
 
 
 
-    for (i = 0; i < 5; i++) {
+//     for (i = 0; i < 5; i++) {
 
-        const computerSelection = getComputerChoice(options);
-        console.log(computerSelection);
+//         const computerSelection = getComputerChoice(options);
+//         console.log(computerSelection);
     
-        let humanChoice = prompt("Rock, paper or scissors?");
-        let humanSelection = humanChoice.toLowerCase();
-        console.log(humanSelection);
+//         let humanChoice = prompt("Rock, paper or scissors?");
+//         let humanSelection = humanChoice.toLowerCase();
+//         console.log(humanSelection);
 
-        let roundResult = playRound(humanSelection, computerSelection);
+//         let roundResult = playRound(humanSelection, computerSelection);
 
-        if(roundResult === true) {
-            humanScore+=1;
-            i+1;
-            console.log("You won the round!");
-        }
-        else if (roundResult === false) {
-            computerScore+=1;
-            i+1;
-            console.log("You lost the round!");
-        }
-        else {
-            return "Something went wrong";
-        }
-    }
+//         if(roundResult === true) {
+//             humanScore+=1;
+//             i+1;
+//             console.log("You won the round!");
+//         }
+//         else if (roundResult === false) {
+//             computerScore+=1;
+//             i+1;
+//             console.log("You lost the round!");
+//         }
+//         else {
+//             return "Something went wrong";
+//         }
+//     }
 
-    if(computerScore>humanScore) {
-        console.log("Computer wins the game!");
-    }
+//     if(computerScore>humanScore) {
+//         console.log("Computer wins the game!");
+//     }
 
-    else if(humanScore>computerScore) {
-        console.log("You won the game!");
-    }
+//     else if(humanScore>computerScore) {
+//         console.log("You won the game!");
+//     }
 
-    else {
-        return "whoopsie something messed up (me)";
-    }
+//     else {
+//         return "whoopsie something messed up (me)";
+//     }
   
-console.log(humanScore, computerScore);
+// console.log(humanScore, computerScore);
 
-}
+// }
 
-playGame();
+// playGame();
 
 
 
